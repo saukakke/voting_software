@@ -1,4 +1,5 @@
-
+<?php include('../connection.php') ?>
+<?php include('voter-server/registration-server.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +12,7 @@
 	   <header>
     <h2>COLLEGE UNION ONLINE ELECTION SYSTEM</h2>
 	</header>
-    <form action="validate-otp.php" method="POST">
+    <form action="" method="POST">
             <h3>REGISTRATION FORM</h3>
 			
                 <div id="reg">
@@ -22,7 +23,7 @@
        </tr></td>
 	   <tr><td>
                     <label for="admno">ADMISSION NUMBER</label>
-            <input type="number" name="admissionnumber"/>
+            <input type="text" required name="admissionnumber"/>
 			</tr></td>
         <tr><td>
             <label>EMAIL ID</label>
@@ -31,18 +32,18 @@
         
  <tr><td>
             <label>PASSWORD</label>
-            <input type="password" name="password">
+            <input type="password" required name="password">
 			</tr></td>
         
         <tr><td>
             <label> CONFIRM PASSWORD</label>
-            <input type="password" name="password1">
+            <input type="password" required name="password1">
 			</tr></td>
 			</table>
                 </div>
           <br>
         
-           <div id="register"><input type="submit" name="register" value="REGISTER"></div>
+           <div id="register"><input type="submit" name="check" value="REGISTER"></div>
              </form>
         <p>Already have an account?<a href="voterlogin.php">Login Here</a></p>
 
