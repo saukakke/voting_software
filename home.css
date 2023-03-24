@@ -1,0 +1,17 @@
+body {
+  background-image: url("image.jpg");
+} 
+header {
+	text-align:center;
+	background-color:LightGreen;
+	color:Black;
+	padding:40px;
+}header h2{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+header h3{
+	font-size:10px;
+}tr{
+	border: 4px solid Greenreen;
+}
