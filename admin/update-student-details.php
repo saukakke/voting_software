@@ -38,6 +38,7 @@
         <ul>
             <li><a href="add_student_details.php">ADD VOTER DETAILS</a></li>
         <li><a class="active" href="update-student-details.php">VIEW/DELETE VOTER DETAILS</a></li>
+        <li><a href="check_votes.php">CASTED VOTES</a></li>
         </ul>
         </nav>
   
