@@ -20,7 +20,7 @@ if(!isset($_SESSION['adminname']))
              <div class="nav">
             <ul>
                 <li><a href="admin-homepage.php">HOME</a></li>
-                <li><a class="active" href="collegedetails.php">COLLEGE</a></li>
+                <li><a class="active" href="collegedetails.php">DEPARTMENT</a></li>
                 <li><a href="add_student_details.php">VOTERS</a></li>
                 <li><a href="election.php">ELECTIONS</a></li>
                 <li><a href="add_position.php">POSITIONS</a></li>
@@ -32,21 +32,21 @@ if(!isset($_SESSION['adminname']))
         </div>
     <div class="nav2">
 	<ul>
-    <li><a class="active" href="collegedetails.php">COURSES</a></li>
-        <li><a href="addcourse.php">ADD COURSE</a></li>
-        <li><a href="deletecourse.php">DELETE COURSE</a></li>
+    <li><a class="active" href="collegedetails.php">DEPARTMENT</a></li>
+        <li><a href="addcourse.php">ADD DEPARTMENT</a></li>
+        <li><a href="deletecourse.php">DELETE DEPARTMENT</a></li>
         <li><a href="updatebatch.php">UPDATE BATCH</a></li>
         <li><a href="deletebatch.php">DELETE BATCH</a></li>
 		</ul>
     </div>
     <div class="collegeDetails">
-      <h4>THE COURSES ADDED ARE:</h4>
+      <h4>THE DEPARTMENTS ADDED ARE:</h4>
         <?php
      $query="SELECT course_name FROM course";
      $result= mysqli_query($con,$query);
      if(mysqli_num_rows($result)>0)
      {
-         echo "<table><tr><th>COURSES</th></tr>";
+         echo "<table><tr><th>DEPARTMENTS</th></tr>";
          while($data=mysqli_fetch_assoc($result))
          {
              echo "<tr><td>".$data['course_name']."</td></tr>";

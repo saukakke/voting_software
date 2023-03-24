@@ -19,7 +19,7 @@ if(!isset($_SESSION['adminname']))
              <div class="nav">
             <ul>
                 <li><a href="admin-homepage.php">HOME</a></li>
-                <li><a href="collegedetails.php">COLLEGE</a></li>
+                <li><a href="collegedetails.php">DEPARTMENT</a></li>
                 <li><a href="add_student_details.php">VOTERS</a></li>
                 <li><a href="election.php">ELECTIONS</a></li>
                 <li><a href="add_position.php">POSITIONS</a></li>

@@ -22,7 +22,7 @@ if(!isset($_SESSION['adminname']))
              <div class="nav">
             <ul>
                 <li><a href="admin-homepage.php">HOME</a></li>
-                <li><a class="active" href="collegedetails.php">COLLEGE</a></li>
+                <li><a class="active" href="collegedetails.php">DEPARTMENT</a></li>
                 <li><a href="add_student_details.php">VOTERS</a></li>
                 <li><a href="election.php">ELECTIONS</a></li>
                 <li><a href="add_position.php">POSITIONS</a></li>
@@ -34,9 +34,9 @@ if(!isset($_SESSION['adminname']))
         </div>
     <div class="nav2">
 	<ul>
-    <li><a  href="collegedetails.php">COURSES</a></li>
-        <li><a class="active" href="addcourse.php">ADD COURSE</a></li>
-        <li><a href="deletecourse.php">DELETE COURSE</a></li>
+    <li><a  href="collegedetails.php">DEPARTMENT</a></li>
+        <li><a class="active" href="addcourse.php">ADD DEPARTMENT</a></li>
+        <li><a href="deletecourse.php">DELETE DEPARTMENT</a></li>
         <li><a href="updatebatch.php">UPDATE BATCH</a></li>
         <li><a href="deletebatch.php">DELETE BATCH</a></li>
 		</ul>
