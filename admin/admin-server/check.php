@@ -16,12 +16,12 @@ if(isset($_POST['check']))
     echo "</script>";
     echo "<table id='table1' border='1'>";
     echo "<tr><th>Name</th><th>Course</th><th>Gender</th><th>Age</th>
-<th>E-mail</th></tr>";
-    $query1 = "SELECT `name`, `course_name`, `gender`, `age`, `e_mail` FROM `student_details` WHERE `gender` = 'Male' and `age` BETWEEN '$min_age' and '$max_age'";
+<th>E-mail</th><th>Election Year</th><th>Position</th></tr>";
+    $query1 = "SELECT `student_details`.`admission_no`, `vote`.`admission_no`,`election_year`,`name`, `course_name`, `gender`, `age`, `e_mail`,`position` FROM `student_details`, `vote` WHERE `gender` = 'Male' and `age` BETWEEN 18 and 46 and `vote`.`admission_no`=`student_details`.`admission_no` ";
     $result1= mysqli_query($con,$query1);
     if(mysqli_num_rows($result1)>0){
         while($data2= mysqli_fetch_assoc($result1)){
-         echo "<tr><td>".$data2['name']."</td><td>".$data2['course_name']."</td><td>".$data2['gender']."</td><td>".$data2['age']."</td><td>".$data2['e_mail']."</td><tr>";       
+         echo "<tr><td>".$data2['name']."</td><td>".$data2['course_name']."</td><td>".$data2['gender']."</td><td>".$data2['age']."</td><td>".$data2['e_mail']."</td><td>".$data2['election_year']."</td><td>".$data2['position']."</td><tr>";       
         }
     }
 }
