@@ -29,7 +29,7 @@ if(!isset($_SESSION['voterid']))
          <?php
              include '../connection.php';
              $admno=$_SESSION['voterid'];
-             $query= "SELECT * FROM students_details WHERE admission_no='$admno'";
+             $query= "SELECT * FROM student_details WHERE admission_no='$admno'";
              $result=mysqli_query($con,$query);
              $details=mysqli_fetch_assoc($result);
              echo "<tr><th>Name</th><td>".$details['name']."</td></tr>";
