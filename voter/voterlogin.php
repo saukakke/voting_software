@@ -41,7 +41,7 @@
 				
                         Not registered yet?<a href="registration.php">REGISTER HERE</a></br>
 					
-						<br><a href="http://localhost/cuoes/">HOME</a>
+						<br><a href="../index.html">HOME</a>
 
         </form>
     </center>

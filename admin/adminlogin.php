@@ -44,7 +44,7 @@
 			
 			
              Are you a Voter?<a href="../voter/voterlogin.php">CLICK HERE</a><br>
-			 <br><a href="http://localhost/cuoes/">HOME</a>
+			 <br><a href="../index.html">HOME</a>
 			 </div>
 									
 
